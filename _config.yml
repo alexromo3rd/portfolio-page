@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: "" # the subpath of your site, e.g. /blog/ (optional)
-url: "https://alexromo3rd.github.io/portfolio-page/" # the base hostname & protocol for your site
+url: "http://www.alexromo.me/" # the base hostname & protocol for your site
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
