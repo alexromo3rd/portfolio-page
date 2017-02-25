@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blocitoff
-thumbnail-path: "img/blocitoff.png"
-short-description: Build a self-destructing to-do list application.
+title: BlocJams
+thumbnail-path: "img/blocJams.png"
+short-description: BlocJams is an online music player that displays albums play tracks from those albums.
 
 ---
 
 {:.center}
-![]({{ site.baseurl }}/img/blocitoff.png)
+![]({{ site.baseurl }}/img/blocJams.png)
 
 ## Explanation
 
