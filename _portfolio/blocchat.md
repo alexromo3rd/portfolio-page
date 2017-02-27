@@ -11,7 +11,7 @@ short-description: A simple chat application.
 
 ## Explanation
 
-Bloc Chat is a chat application built using the AngluarJS framework. It allows you to create a username, new chatrooms, and post messages to those chatrooms. Each message posted includes the username of the person who posted it and the time and date it was posted.
+Bloc Chat is a chat application built using the AngularJS framework. It allows you to create a username, new chatrooms, and post messages to those chatrooms. Each message posted includes the username of the person who posted it and the time and date it was posted.
 
 ## Problem
 
@@ -40,19 +40,25 @@ $scope.activeRoom = function(room) {
   $scope.messages = Message.getByRoomId($scope.currentRoom.$id);
 };
 ```
-We then use data-binding to display the `$value` of the `currentRoom` varible.
+We then use data-binding to display the `$value` of the `currentRoom` variable.
 ``` html
 <h1 class="main-section-title center">{{ currentRoom.$value }}</h1>
 ```
 
 ## Results
 
-Bacon ipsum dolor amet filet mignon meatball spare ribs fatback bacon shankle. Kielbasa andouille fatback salami, boudin bresaola pig alcatra turkey spare ribs jerky. Corned beef bresaola leberkas salami alcatra beef landjaeger venison shank bacon meatloaf beef ribs picanha. Leberkas sausage brisket porchetta shankle prosciutto chicken picanha kielbasa pig kevin t-bone turducken filet mignon jowl.
+Username modal pops up when the page first loads.
+{:.center}
+![]({{ site.baseurl }}/img/username-modal.png)
 
-> Bacon ipsum dolor amet filet mignon meatball spare ribs fatback bacon shankle. Kielbasa andouille fatback salami, boudin bresaola pig alcatra turkey spare ribs jerky. Corned beef bresaola leberkas salami alcatra beef landjaeger venison shank bacon meatloaf beef ribs picanha. Leberkas sausage brisket porchetta shankle prosciutto chicken picanha kielbasa pig kevin t-bone turducken filet mignon jowl.
+New room modal pops up when you click the `New Room` button on the left side.
+{:.center}
+![]({{ site.baseurl }}/img/new-room-modal.png)
 
-Bacon ipsum dolor amet filet mignon meatball spare ribs fatback bacon shankle. Kielbasa andouille fatback salami, boudin bresaola pig alcatra turkey spare ribs jerky. Corned beef bresaola leberkas salami alcatra beef landjaeger venison shank bacon meatloaf beef ribs picanha. Leberkas sausage brisket porchetta shankle prosciutto chicken picanha kielbasa pig kevin t-bone turducken filet mignon jowl.
+Current room name appears on the top right of the page as well as the messages associated with that room.
+{:.center}
+![]({{ site.baseurl }}/img/room-messages.png)
 
 ## Conclusion
 
-Bacon ipsum dolor amet filet mignon meatball spare ribs fatback bacon shankle. Kielbasa andouille fatback salami, boudin bresaola pig alcatra turkey spare ribs jerky. Corned beef bresaola leberkas salami alcatra beef landjaeger venison shank bacon meatloaf beef ribs picanha. Leberkas sausage brisket porchetta shankle prosciutto chicken picanha kielbasa pig kevin t-bone turducken filet mignon jowl.
+Bloc Chat taught me how to implement Modals in an application using $uibModal. I had the opportunity to use Firebase while working on this project and learned how to make calls to the database as well as add new items to a database.
