@@ -48,14 +48,17 @@ We then use data-binding to display the `$value` of the `currentRoom` variable.
 ## Results
 
 Username modal pops up when the page first loads.
+
 {:.center}
 ![]({{ site.baseurl }}/img/username-modal.png)
 
 New room modal pops up when you click the `New Room` button on the left side.
+
 {:.center}
 ![]({{ site.baseurl }}/img/new-room-modal.png)
 
 Current room name appears on the top right of the page as well as the messages associated with that room.
+
 {:.center}
 ![]({{ site.baseurl }}/img/room-messages.png)
 
