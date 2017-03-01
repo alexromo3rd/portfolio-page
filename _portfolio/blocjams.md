@@ -1,13 +1,13 @@
 ---
 layout: post
 title: BlocJams
-thumbnail-path: "img/blocJams.png"
+thumbnail-path: "img/blocJams-landing.png"
 short-description: An online music player.
 
 ---
 
 {:.center}
-![]({{ site.baseurl }}/img/blocJams.png)
+![]({{ site.baseurl }}/img/blocJams-landing.png)
 
 ## Explanation
 
@@ -19,11 +19,19 @@ This application was originally built using HTML, CSS, JavaScript, and jQuery. T
 
 ## Solution
 
-Bacon ipsum dolor amet filet mignon meatball spare ribs fatback bacon shankle. Kielbasa andouille fatback salami, boudin bresaola pig alcatra turkey spare ribs jerky. Corned beef bresaola leberkas salami alcatra beef landjaeger venison shank bacon meatloaf beef ribs picanha. Leberkas sausage brisket porchetta shankle prosciutto chicken picanha kielbasa pig kevin t-bone turducken filet mignon jowl.
+The solution was to split up the main album.js file from the previous application into multiple JavaScript files such as controllers, services, and a custom directive. This made is easier to locate code for specific parts of the application rather than digging through hundreds of lines of code. It also reduces the amount of repeat code which make the application faster.
 
 ## Results
 
-The result from this rewrite is a fully functional music player application written in fewer lines of code. It is now easier to navigate the code base and find certain files because of the way Angular is structured. In the non-angular version of this app, one of the .js files had almost 300 lines of code!
+The result from this rewrite is a fully functional music player application written in Angular! The file structure makes it easier to navigate the code base. In the non-angular version of this app, one of the JavaScript files had almost 300 lines of code!
+
+{:.center}
+![]({{ site.baseurl }}/img/blocJams-album.png)
+
+Albums are displayed and the user can click into each one which will display tracks from that album.
+
+{:.center}
+![]({{ site.baseurl }}/img/blocJams-songPlayer.png)
 
 ## Conclusion
 
